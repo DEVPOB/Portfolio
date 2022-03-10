@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: rgb(24,26,27);
+    font-family: 'Mitr', sans-serif;
+}
+.Title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 40px;
+    transform: translate(-50%,-50%);
+    animation-name: title;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes title{
+    0%{letter-spacing: 1px;color: black;}
+    25%{letter-spacing: 2px;color: black;}
+    50%{letter-spacing: 3px;color: black;}
+    75%{letter-spacing: 4px;color: black;}
+    100% {letter-spacing: 5px;color: white;content: 'Hello';}
+    
+
+}
