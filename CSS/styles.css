@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+:root{
+    --main-color:#161616;
+    --text-color:#ffff;
+    --important-color:#0f33ff;
+    --fs-xl: 5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 0.8rem;
+}
+p{
+    margin: 0;
+    color: var(--text-color);
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+html,body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--main-color);
+    font-family: 'Prompt', sans-serif;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+#Title{
+    position: relative;
+    padding-top: 10%;
+    padding-left: 5%;
+    margin: 0%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:var(--fs-500); 
+}
+
+
+.Name{
+    color: var(--important-color);
+    letter-spacing: 5px;
+    font-size: var(--fs-xl);
+}
+.Short_About{
+    text-transform: none;
+
+}
+
+
+
+.btn{
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    background-color: var(--important-color);
+    color: var(--text-color);
+    padding: 5px 5px;
+    transition: letter-spacing 0.5s;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+img{
+    position: absolute;
+    padding-left:65%;
+}
+.TitleAboutMe{
+    max-width: 960px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #0f33ff;
+    border-radius: 20px;
+}
+.TitleAboutMe .TextTitle{
+    font-family: 'Bungee', cursive;
+}
+
+#AboutMe{
+    background-color: var(--main-color);
+}
+.AboutMe_Title{
+    text-align: center;
+    font-size: 3rem;
+}
+.AboutMe_GameDev,.AboutMe_Bot_Discord_Developer,.AboutMe_App_Developer,.AboutMe_Web_Developer{
+    padding-top: 50px;
+    font-family: 'Prompt', sans-serif;
+    padding-left: 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.AboutMe_App_Developer,.AboutMe_Web_Developer{
+    padding-top: 150px;
+}
+
+
+.AboutMe_Image{
+    width: 250px;
+}
+
+ul li{
+    color: var(--text-color);
+}
+
+
+/* 410 */
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1301px){
+    img{
+        padding-left: 60%;
+    }    
+}
+@media screen and (max-width: 1088px){
+    img{
+        padding-left: 55%;
+    }  
+}
+@media screen and (max-width:881px){
+    img{
+        padding-left: 50%;
+    }
+}
+@media screen and (max-width:830px){
+    img{
+        padding-left: 55%;
+        width: 250px;
+    }
+}
+@media screen and (max-width:734px) {
+    img{
+        padding-left: 65%;
+        width: 200px;
+    }
+    .AboutMe_Title{
+        font-size: 30px;
+    }
+    
+    
+}
+@media screen and (max-width:622px){
+    img{
+        display: none;
+        
+    }
+    
+}
+@media screen and (max-width:462px) {
+    #Title{
+        font-size: 15px;
+    }
+    .Name{
+        font-size: 60px;
+    }
+    .AboutMe_Title{
+        font-size: 20px;
+    }
+}
+.no-responsive{
+    visibility: hidden;
+
+}
+@media screen and (max-width:337px) {
+    .no-responsive{
+        position: absolute;
+        background-color: aliceblue;
+        visibility: visible;
+        z-index: 3;
+        width: 1000%;
+        height: 1000%;
+    }
+}
+
+/* img{
+    display: none;
+} */
