@@ -69,37 +69,37 @@ img{
     position: absolute;
     padding-left:65%;
 }
-.TitleAboutMe{
+.Titlework{
     max-width: 960px;
     width: 90%;
     margin: 20px auto;
     background-color: #0f33ff;
     border-radius: 20px;
 }
-.TitleAboutMe .TextTitle{
+.Titlework .TextTitle{
     font-family: 'Bungee', cursive;
 }
 
 #AboutMe{
     background-color: var(--main-color);
 }
-.AboutMe_Title{
+.work_Title{
     text-align: center;
     font-size: 3rem;
 }
-.AboutMe_GameDev,.AboutMe_Bot_Discord_Developer,.AboutMe_App_Developer,.AboutMe_Web_Developer{
+.work_GameDev,.work_Bot_Discord_Developer,.work_App_Developer,.work_Web_Developer{
     padding-top: 50px;
     font-family: 'Prompt', sans-serif;
     padding-left: 5%;
     font-size: 30px;
     font-weight: bold;
 }
-.AboutMe_App_Developer,.AboutMe_Web_Developer{
+.work_App_Developer,.work_Web_Developer{
     padding-top: 150px;
 }
 
 
-.AboutMe_Image{
+.work_Image{
     width: 250px;
 }
 
@@ -133,12 +133,13 @@ ul li{
 @media screen and (max-width:881px){
     img{
         padding-left: 50%;
+        width: 250px;
     }
 }
 @media screen and (max-width:830px){
     img{
         padding-left: 55%;
-        width: 250px;
+        /* width: 250px; */
     }
 }
 @media screen and (max-width:734px) {
@@ -146,7 +147,7 @@ ul li{
         padding-left: 65%;
         width: 200px;
     }
-    .AboutMe_Title{
+    .work_Title{
         font-size: 30px;
     }
     
@@ -166,7 +167,7 @@ ul li{
     .Name{
         font-size: 60px;
     }
-    .AboutMe_Title{
+    .work_Title{
         font-size: 20px;
     }
 }
