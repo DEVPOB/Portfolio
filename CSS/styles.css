@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
-    --main-color:#161616;
-    --text-color:#ffff;
-    --important-color:#0f33ff;
+    --main-color:#151618;
+    --second-color:#182536;
+    --text-color:#f7f7f7;
+    --important-color:#3192d6;
+    --textContract-color:#000000;
     --fs-xl: 5rem;
     --fs-600: 1.5rem;
     --fs-500: 1.25rem;
@@ -48,7 +50,7 @@ section{
 }
 .Short_About{
     text-transform: none;
-
+    
 }
 
 
@@ -58,6 +60,7 @@ section{
     top: 10px;
     text-decoration: none;
     background-color: var(--important-color);
+    font-size: 25px;
     color: var(--text-color);
     padding: 5px 5px;
     transition: letter-spacing 0.5s;
@@ -71,32 +74,42 @@ img{
 }
 .Titlework{
     max-width: 960px;
-    width: 90%;
+    width: 50%;
+    padding: 20px;
     margin: 20px auto;
-    background-color: #0f33ff;
+    background-color: var(--important-color);
     border-radius: 20px;
 }
+.Titlework p{
+    color: var(--textContract-color);
+}
 .Titlework .TextTitle{
-    font-family: 'Bungee', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: monospace;
 }
 
 #AboutMe{
-    background-color: var(--main-color);
+    background-color: var(--second-color);
 }
+.AboutMe_Profile p{
+    font-size: var(--fs-700);
+}
+
+
+
+
 .work_Title{
     text-align: center;
     font-size: 3rem;
 }
-.work_GameDev,.work_Bot_Discord_Developer,.work_App_Developer,.work_Web_Developer{
+.work_GameDev,.AboutMe_Profile{
     padding-top: 50px;
     font-family: 'Prompt', sans-serif;
     padding-left: 5%;
     font-size: 30px;
     font-weight: bold;
 }
-.work_App_Developer,.work_Web_Developer{
-    padding-top: 150px;
-}
+
 
 
 .work_Image{
@@ -123,7 +136,11 @@ ul li{
 @media screen and (max-width: 1301px){
     img{
         padding-left: 60%;
-    }    
+    }
+    .AboutMe_Profile p{
+        font-size: var(--fs-600);
+    }
+    
 }
 @media screen and (max-width: 1088px){
     img{
@@ -134,6 +151,9 @@ ul li{
     img{
         padding-left: 50%;
         width: 250px;
+    }
+    .AboutMe_Profile p{
+        font-size: var(--fs-500);
     }
 }
 @media screen and (max-width:830px){
@@ -185,7 +205,3 @@ ul li{
         height: 1000%;
     }
 }
-
-/* img{
-    display: none;
-} */
