@@ -68,7 +68,7 @@ section{
 .btn:hover{
     letter-spacing: 5px;
 }
-img{
+.Home_Image,.Profile_Image{
     position: absolute;
     padding-left:65%;
 }
@@ -94,6 +94,12 @@ img{
 
 .work_Image{
     width: 250px;
+}
+
+.PortfolioTitle{
+    font-size: 3rem;
+    /* position: relative; */
+    text-align: center;
 }
 
 
@@ -164,7 +170,6 @@ ul li{
     .AboutMe_Profile p{
         font-size: var(--fs-600);
     }
-    
 }
 @media screen and (max-width: 1088px){
     img{
@@ -189,7 +194,7 @@ ul li{
 @media screen and (max-width:734px) {
     img{
         padding-left: 65%;
-        width: 200px;
+        width: 150px;
     }
     .work_Title{
         font-size: 30px;
@@ -222,6 +227,8 @@ ul li{
 @media screen and (max-width:337px) {
     .no-responsive{
         position: absolute;
+        font-size: 15rem;
+        color: #000000;
         background-color: aliceblue;
         visibility: visible;
         z-index: 3;
@@ -229,6 +236,7 @@ ul li{
         height: 1000%;
     }
 }
+
 /* .container{
     position: relative;
     width: 200px;
@@ -243,6 +251,7 @@ ul li{
 }
 .image_overlay{
     margin-left: 20%;
+    margin-top: -200px;
     position: absolute;
     width: 200px;
     height: 200px;
@@ -252,13 +261,15 @@ ul li{
 }
 .image_title{
     color: var(--text-color);
-    font-size: large;
+    white-space: nowrap;
+    font-size: 1rem;
     position: absolute;
-    top: 40%;
-    margin-left: 12px;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .container:hover .image_overlay{
     opacity: 1;
 
-} */
+}  */
