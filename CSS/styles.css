@@ -72,23 +72,9 @@ img{
     position: absolute;
     padding-left:65%;
 }
-.Titlework{
-    max-width: 960px;
-    width: 50%;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: var(--important-color);
-    border-radius: 20px;
-}
-.Titlework p{
-    color: var(--textContract-color);
-}
-.Titlework .TextTitle{
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: monospace;
-}
 
-#AboutMe{
+
+#AboutMe,#Contact{
     background-color: var(--second-color);
 }
 .AboutMe_Profile p{
@@ -98,11 +84,7 @@ img{
 
 
 
-.work_Title{
-    text-align: center;
-    font-size: 3rem;
-}
-.work_GameDev,.AboutMe_Profile{
+.AboutMe_Profile{
     padding-top: 50px;
     font-family: 'Prompt', sans-serif;
     padding-left: 5%;
@@ -110,11 +92,23 @@ img{
     font-weight: bold;
 }
 
-
-
 .work_Image{
     width: 250px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ul li{
     color: var(--text-color);
@@ -122,16 +116,46 @@ ul li{
 
 
 /* 410 */
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width:1817px){
+    img{
+        width: 500px;
+    }
+    .Title{
+        font-size: 4rem;
+    }
+    .Name{
+        font-size: 12rem;
+    }
+    .btn{
+        font-size: 35px; 
+    }
+    .Short_About{
+        font-size: 4rem;
+    }
+    .AboutMe_Profile p{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (min-width:1341px){
+    #Title{
+        padding-top: 7%;
+    }
+    img{
+        width: 300px;
+    }
+    .Title{
+        font-size: 2.5rem;
+    }
+    .Name{
+        font-size: 7rem;
+    }
+    .Short_About{
+        font-size: 2rem;
+    }
+    .AboutMe_Profile p{
+        font-size: 2.5rem;
+    }
+}
 
 @media screen and (max-width: 1301px){
     img{
@@ -193,7 +217,7 @@ ul li{
 }
 .no-responsive{
     visibility: hidden;
-
+    
 }
 @media screen and (max-width:337px) {
     .no-responsive{
@@ -205,3 +229,36 @@ ul li{
         height: 1000%;
     }
 }
+/* .container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+.image{
+    padding-left: 20%;
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.image_overlay{
+    margin-left: 20%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #000000;
+}
+.image_title{
+    color: var(--text-color);
+    font-size: large;
+    position: absolute;
+    top: 40%;
+    margin-left: 12px;
+}
+
+.container:hover .image_overlay{
+    opacity: 1;
+
+} */
