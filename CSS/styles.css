@@ -30,7 +30,7 @@ section{
     width: 100%;
     height: 100vh;
 }
-
+/* Title, Home */
 #Title{
     position: relative;
     padding-top: 10%;
@@ -71,9 +71,12 @@ section{
 .Home_Image,.Profile_Image{
     position: absolute;
     padding-left:65%;
+    
 }
 
 
+
+/* Background Color section(About Me, Contact) */
 #AboutMe,#Contact{
     background-color: var(--second-color);
 }
@@ -92,38 +95,100 @@ section{
     font-weight: bold;
 }
 
-.work_Image{
-    width: 250px;
-}
 
+
+/* Portfolio */
 .PortfolioTitle{
     font-size: 3rem;
-    /* position: relative; */
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ul li{
+.container{
+    position: relative;
+    margin-left: 100px;
+    width: 370px;
+    height: 300px;
+    display: inline-block;
+}
+.image{
+    padding-left: 20%;
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.image_overlay{
+    margin-left: 20%;
+    margin-top: -300px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #000000;
+}
+.image_title a{
     color: var(--text-color);
+    white-space: nowrap;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container:hover .image_overlay{
+    opacity: 1;
 }
 
 
-/* 410 */
+
+/* contact */
+#Contact{
+    height: 30vh;
+}
+.ContactZone{
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+
+}
+.Contact_Image{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 10vh;
+    height: 10vh;
+    transition: all 0.5s;
+}
+.Contact_Image:hover{
+    width: 15vh;
+    height: 15vh;
+}
+.Contact_Description{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+}
+.Contact_Description a{
+    margin-top: 10px;
+    text-decoration: none;
+    margin-left: 50px;
+    color: var(--text-color);
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.Contact_Description a:hover{
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+
+
+
+/* Responsive */
 @media screen and (min-width:1817px){
-    img{
+    .Home_Image,.Profile_Image{
         width: 500px;
     }
     .Title{
@@ -142,11 +207,30 @@ ul li{
         font-size: 3.5rem;
     }
 }
+@media screen and (max-width:1461px){
+    .container{
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+    }
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+    .image_overlay{
+        width: 200px;
+        height: 200px;
+        margin-top: -200px;
+    }
+    .image_title a{
+        font-size: 1.1rem;
+    }
+}
 @media screen and (min-width:1341px){
     #Title{
         padding-top: 7%;
     }
-    img{
+    .Home_Image,.Profile_Image{
         width: 300px;
     }
     .Title{
@@ -163,8 +247,12 @@ ul li{
     }
 }
 
+
+
+
+
 @media screen and (max-width: 1301px){
-    img{
+    .Home_Image,.Profile_Image{
         padding-left: 60%;
     }
     .AboutMe_Profile p{
@@ -172,12 +260,49 @@ ul li{
     }
 }
 @media screen and (max-width: 1088px){
-    img{
+    .Home_Image,.Profile_Image{
         padding-left: 55%;
     }  
+    .container{
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+    }
+    .image{
+        width: 170px;
+        height: 170px;
+    }
+    .image_overlay{
+        width: 170px;
+        height: 170px;
+        margin-top: -170px;
+    }
+    .image_title a{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width:1064px) {
+    #Portfolio{
+        height: auto;
+    }
+    .container{
+        margin-left: 100px;
+        width: 300px;
+        height: 300px;
+    }
+    .image{
+        width: 250px;
+        height: 250px;
+    }
+    .image_overlay{
+        width: 250px;
+        height: 250px;
+        margin-top: -250px;
+    }
+   
 }
 @media screen and (max-width:881px){
-    img{
+    .Home_Image,.Profile_Image{
         padding-left: 50%;
         width: 250px;
     }
@@ -186,29 +311,40 @@ ul li{
     }
 }
 @media screen and (max-width:830px){
-    img{
+    .Home_Image,.Profile_Image{
         padding-left: 55%;
-        /* width: 250px; */
     }
 }
 @media screen and (max-width:734px) {
-    img{
+    .Home_Image,.Profile_Image{
         padding-left: 65%;
         width: 150px;
     }
-    .work_Title{
-        font-size: 30px;
+    .Contact_Image{
+        margin-top: 50px;
+        width: 5vh;
+        height: 5vh;
     }
+    .Contact_Description a{
+        font-size: 15px;
+    }
+   
     
     
 }
 @media screen and (max-width:622px){
-    img{
+    .Home_Image,.Profile_Image{
         display: none;
         
     }
     
 }
+@media screen and (max-width:530px) {
+    .Contact_Description{
+        display: block;
+    }
+}
+
 @media screen and (max-width:462px) {
     #Title{
         font-size: 15px;
@@ -216,10 +352,26 @@ ul li{
     .Name{
         font-size: 60px;
     }
-    .work_Title{
+    .btn{
         font-size: 20px;
     }
+    
+    .container{
+        margin-left: auto;
+        width: 300px;
+        height: 300px;
+    }
+    .image{
+        width: 250px;
+        height: 250px;
+    }
+    .image_overlay{
+        width: 250px;
+        height: 250px;
+        margin-top: -250px;
+    }
 }
+
 .no-responsive{
     visibility: hidden;
     
@@ -237,39 +389,3 @@ ul li{
     }
 }
 
-/* .container{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-}
-.image{
-    padding-left: 20%;
-    display: block;
-    width: 200px;
-    height: 200px;
-}
-.image_overlay{
-    margin-left: 20%;
-    margin-top: -200px;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    transition: all .3s ease;
-    opacity: 0;
-    background-color: #000000;
-}
-.image_title{
-    color: var(--text-color);
-    white-space: nowrap;
-    font-size: 1rem;
-    position: absolute;
-    margin-top: 50%;
-    margin-left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.container:hover .image_overlay{
-    opacity: 1;
-
-}  */
