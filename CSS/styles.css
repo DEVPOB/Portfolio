@@ -70,7 +70,7 @@ section{
 }
 .Home_Image,.Profile_Image{
     position: absolute;
-    padding-left:65%;
+    margin-left:65%;
     
 }
 
@@ -203,6 +203,12 @@ section{
     .Short_About{
         font-size: 4rem;
     }
+    #Home{
+        height: 80vh;
+    }
+    #AboutMe{
+        
+    }
     .AboutMe_Profile p{
         font-size: 3.5rem;
     }
@@ -253,7 +259,7 @@ section{
 
 @media screen and (max-width: 1301px){
     .Home_Image,.Profile_Image{
-        padding-left: 60%;
+        margin-left: 60%;
     }
     .AboutMe_Profile p{
         font-size: var(--fs-600);
@@ -261,7 +267,7 @@ section{
 }
 @media screen and (max-width: 1088px){
     .Home_Image,.Profile_Image{
-        padding-left: 55%;
+        margin-left: 55%;
     }  
     .container{
         margin-left: 50px;
@@ -303,7 +309,7 @@ section{
 }
 @media screen and (max-width:881px){
     .Home_Image,.Profile_Image{
-        padding-left: 50%;
+        margin-left: 50%;
         width: 250px;
     }
     .AboutMe_Profile p{
@@ -312,12 +318,12 @@ section{
 }
 @media screen and (max-width:830px){
     .Home_Image,.Profile_Image{
-        padding-left: 55%;
+        margin-left: 55%;
     }
 }
 @media screen and (max-width:734px) {
     .Home_Image,.Profile_Image{
-        padding-left: 65%;
+        margin-left: 65%;
         width: 150px;
     }
     .Contact_Image{
