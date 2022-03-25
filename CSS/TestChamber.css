@@ -1,0 +1,78 @@
+:root{
+    --main-color:#151618;
+    --Home-color:#181a1b;
+    --second-color:#182536;
+    --text-color:#eaeaea;
+    --important-color:#3192d6;
+    --textContract-color:#000000;
+}
+p{
+    margin: 0;
+    color: var(--text-color);
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+html,body{
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--Home-color);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:monospace;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+#Video_GameDevelop,#Application,#Bot_Discord,#Website,#VSCode_Extensions{
+    background-color: var(--second-color);
+}
+.Title{
+    margin-top: 18%;
+}
+
+.Title p{
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 5rem;
+    color: var(--text-color);
+}
+.Menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Menu a{
+    margin: 45px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all .5s;
+}
+.Menu a:hover{
+    font-size: 2.5rem;
+}
+
+
+
+
+
+.no-responsive{
+    visibility: hidden;
+    
+}
+@media screen and (max-width:337px) {
+    .no-responsive{
+        position: absolute;
+        font-size: 15rem;
+        color: #000000;
+        background-color: aliceblue;
+        visibility: visible;
+        z-index: 3;
+        width: 1000%;
+        height: 1000%;
+    }
+}

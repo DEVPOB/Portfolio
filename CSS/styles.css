@@ -206,9 +206,7 @@ section{
     #Home{
         height: 80vh;
     }
-    #AboutMe{
-        
-    }
+    
     .AboutMe_Profile p{
         font-size: 3.5rem;
     }
@@ -361,7 +359,9 @@ section{
     .btn{
         font-size: 20px;
     }
-    
+    #Home,#AboutMe{
+        height: 80vh;
+    }
     .container{
         margin-left: auto;
         width: 300px;
