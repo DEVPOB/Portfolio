@@ -203,9 +203,8 @@ section{
     .Short_About{
         font-size: 4rem;
     }
-    #Home{
-        height: 80vh;
-    }
+    
+
     
     .AboutMe_Profile p{
         font-size: 3.5rem;
@@ -237,10 +236,7 @@ section{
     .Home_Image,.Profile_Image{
         width: 300px;
     }
-    .Profile_Image{
-        width: 250px;
-        height: 250px;
-    }
+
     .Title{
         font-size: 2.5rem;
     }
@@ -398,4 +394,8 @@ section{
         height: 1000%;
     }
 }
-
+@media screen and (min-height:1024px) {
+    #Home,#AboutMe{
+        height: 70vh;
+    }
+}
