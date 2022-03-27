@@ -237,6 +237,10 @@ section{
     .Home_Image,.Profile_Image{
         width: 300px;
     }
+    .Profile_Image{
+        width: 250px;
+        height: 250px;
+    }
     .Title{
         font-size: 2.5rem;
     }
